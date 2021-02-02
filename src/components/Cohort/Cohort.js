@@ -4,7 +4,7 @@ import './Cohort.css';
 
 const Cohort = (props) => {
     return (
-        <section className='ideas-container'>
+        <section className='cohort-container'>
             <Person />
             <Person />
             <Person />
