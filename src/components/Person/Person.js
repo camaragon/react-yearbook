@@ -3,7 +3,7 @@ import './Person.css';
 
 const Person = () => {
     return (
-        <div className='pers'>
+        <div className='person-card'>
             <img></img>
             <h3>Name</h3>
             <p>Quote</p>
