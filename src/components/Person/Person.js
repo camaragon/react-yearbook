@@ -1,13 +1,13 @@
 import React from 'react';
 import './Person.css';
 
-const Person = () => {
+const Person = ({ photo, name, quote, superlative}) => {
     return (
         <div className='person-card'>
-            <img></img>
-            <h3>Name</h3>
-            <p>Quote</p>
-            <p>Superlative</p>
+            <img className="staff-images" src={photo}></img>
+            <h3>{name}</h3>
+            <p>{quote}</p>
+            <p>{superlative}</p>
         </div>
     )
 }
