@@ -7,7 +7,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      staff: people.staff
+      staff: people.staff,
+      students: people.students
     }
   }
 
