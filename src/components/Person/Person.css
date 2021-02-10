@@ -1,9 +1,30 @@
 .person-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     background: white;
     border: solid 3px black;
+    height: 400px;
 }
 
 .staff-images {
     height: 35px;
     width: 35px;
+}
+
+.person-text-box {
+    display: none;
+}
+
+.person-card:hover .person-text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.person-text-box * {
+    color: white;
 }

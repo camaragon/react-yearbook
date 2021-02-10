@@ -3,11 +3,12 @@ import './Person.css';
 
 const Person = ({ photo, name, quote, superlative}) => {
     return (
-        <div className='person-card'>
-            <img className="staff-images" src={photo}></img>
-            <h3>{name}</h3>
-            <p>{quote}</p>
-            <p>{superlative}</p>
+        <div className='person-card' style={{backgroundImage: `url(${photo})`, backgroundSize: 'cover'}} >
+            <div className='person-text-box' >
+                <h3>{name}</h3>
+                <p>{`"${quote}"`}</p>
+                <p>{superlative}</p>
+            </div>
         </div>
     )
 }
