@@ -5,7 +5,7 @@ const Form = () => {
     return (
         <form className='student-form'>
             <h2>Add a student</h2>
-            <label>Name</label>
+            <label name='n'>Name</label>
             <input type='text'></input>
             <label>Quote</label>
             <input type='text'></input>
