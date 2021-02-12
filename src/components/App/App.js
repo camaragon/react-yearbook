@@ -13,6 +13,10 @@ class App extends Component {
     }
   }
 
+  addStudent = (newStudent) => {
+    this.setState( { students: [...this.state.students, newStudent] } );
+  }
+
   render() {
     console.log(this.state.staff)
     return (
@@ -22,7 +26,7 @@ class App extends Component {
         </header>
         <h2 >Staff</h2>
         <Cohort staff={this.state.staff}/>
-        <Form />
+        <Form newStudent={this.addStudent}/>
         <h2>Students</h2>
         <Cohort staff={this.state.students}/>
       </div>
